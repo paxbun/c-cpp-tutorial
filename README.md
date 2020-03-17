@@ -5,7 +5,7 @@
 
 # 목차
 
-1. [프로그램 설치](prepare-development-environment)
+1. [프로그램 설치](1-prepare-development-environment)
 C/C++ 프로그래밍을 하기 위해 필요한 프로그램을 설치하는 방법에 대해 설명합니다.
-2. [컴퓨터의 구조](structure-of-computers)
+2. [컴퓨터의 구조](2-structure-of-computers)
 C/C++ 문법을 더 쉽게 이해하기 위해 컴퓨터의 구조를 간단하게 다룹니다.

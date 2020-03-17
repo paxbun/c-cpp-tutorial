@@ -33,4 +33,4 @@ https://visualstudio.microsoft.com/
 
 이 중에 설치할 컴포넌트는 **Desktop development with C++**입니다. 해당 컴포넌트를 선택하셨으면 오른쪽 밑에 설치 버튼을 눌러주세요. 설치엔 오랜 시간이 걸립니다. 설치하는 동안, 다음 장을 읽어주세요.
 
-[다음: 컴퓨터의 구조](../structure-of-computers)
+[다음: 컴퓨터의 구조](../2-structure-of-computers)
