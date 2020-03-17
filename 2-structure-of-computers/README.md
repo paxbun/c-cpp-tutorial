@@ -98,4 +98,4 @@ store 1
 
 이렇게 세자리 또는 네자리 씩 끊는걸로 쉽게 2진수를 8진수나 16진수로 변환할 수 있는 것을 알 수 있습니다. 2장을 읽는 동안 Visual Studio의 설치가 끝났을 것이라고 생각합니다. 다음 장을 읽어주세요.
 
-[다음: 변수와 함수](../3-variables-and-functions)
+[다음: Hello, world!](../3-variables-and-functions)
