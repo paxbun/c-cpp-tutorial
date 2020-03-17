@@ -93,4 +93,4 @@ int main()
 
 로 해석할 수 있습니다.
 
-[다음: 변수와 포인터](../4-variables-and-pointers)
+[다음: 변수와 포인터](../4-types-and-variables)
