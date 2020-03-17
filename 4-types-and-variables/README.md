@@ -104,3 +104,81 @@ int main() {
     double d = -1.1237;
 }
 ```
+
+## 변수 화면에 출력하기
+
+변수를 화면에 출력할 때에도 [3장](../3-hello-world)에서 배운 `printf`를 활용 할 수 있습니다. 다음 코드를 입력하신 후 `Ctrl + F5`를 눌러 결과를 확인해주세요.
+```c
+#include <stdio.h>
+
+int main()
+{
+    int i = 5;
+    printf("Value of i: %d", i);
+}
+```
+출력 결과가 다음과 같아야 합니다.
+```
+Value of i: 5
+```
+
+`printf`도 여러 번 사용할 수 있습니다.
+```c
+#include <stdio.h>
+
+int main()
+{
+    int i = 5, j = 6;
+    printf("Value of i: %d ", i);
+    printf("Value of i: %d ", i);
+    printf("Value of j: %d ", j);
+}
+```
+```
+Value of i: 5 Value of i: 5 Value of j: 6
+```
+
+이렇게 `%d` 라는 표시를 한 곳에 `%d`가 표시되는 것이 아니라, 변수의 값이 표시되는 것을 알 수 있습니다. `%d`는 여러 번 사용할 수 있습니다.
+```c
+#include <stdio.h>
+
+int main()
+{
+    int i = 5, j = 6;
+    printf("Value of i and j: %d, %d", i, j);
+}
+```
+```
+Value of i and j: 5, 6
+```
+
+`%d`는 `int`를 표시하기 위해 사용됩니다. 자료형이 다른 변수는 다른 표시를 사용하여야 합니다. 이러한 표시들을 `형식 지정자(format specifier)`라고 합니다. 자료형에 따른 형식 지정자는 다음과 같습니다. `char`의 형식 지정자는 나중에 배우게 됩니다.
+
+| 이름 | 형식 지정자 |
+| ---- | ---- |
+| `signed int` | `%d` |
+| `signed short int` | `%hd` |
+| `signed long int` | `%ld` |
+| `signed long long int` | `%lld` |
+| `unsigned int` | `%u` |
+| `unsigned short int` | `%hu` |
+| `unsigned long int` | `%lu` |
+| `unsigned long long int` | `%llu` |
+| `float` | `%f` |
+| `double` | `%lf` |
+
+이 형식 지정자를 모두 섞어 쓸 수 있습니다.
+```c
+#include <stdio.h>
+
+int main()
+{
+    int i = 6;
+    double d = 7;
+    unsigned long long ull = 8;
+    printf("%d, %lf, and %llu", i, d, ull);
+}
+```
+```
+6, 7.000000, and 8
+```
