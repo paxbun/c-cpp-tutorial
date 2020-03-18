@@ -34,6 +34,6 @@ https://visualstudio.microsoft.com/
 중앙에 있는 세 프로그램 소개 중 가장 왼쪽의 `Download Visual Studio` 위에 마우스 커서를 올리시고, `Community 2019`를 눌러 프로그램을 다운로드해주세요. 다운로드하신 프로그램을 실행하시면 잠시 기다려달라는 메시지가 표시된 후 다음 창이 떠야 합니다.
 ![Visual Studio Installer](img/2.png "Visual Studio Installer")
 
-이 중에 설치할 컴포넌트는 `Desktop development with C++`입니다. 해당 컴포넌트를 선택하셨으면 오른쪽 밑에 설치 버튼을 눌러주세요. 설치엔 오랜 시간이 걸립니다. 설치하는 동안, 다음 장을 읽어주세요.
+이 중에 설치할 컴포넌트는 `Desktop development with C++`입니다. **스크린샷에 체크된 모든 컴포넌트를 체크할 필요는 없습니다.** 해당 컴포넌트를 선택하셨으면 오른쪽 밑에 설치 버튼을 눌러주세요. 설치엔 오랜 시간이 걸립니다. 설치하는 동안, 다음 장을 읽어주세요.
 
 [다음: 컴퓨터의 구조](../2-structure-of-computers)
