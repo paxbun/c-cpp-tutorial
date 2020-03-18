@@ -82,7 +82,7 @@ int main()
 }
 ```
 
-`signed int` 자체도 자료형이 됩니다. `signed int`의 바이트 수는 컴파일러에 따라 다릅니다. 아두이노에선 2이지만, Visual Studio의 컴파일러를 포함한 요즘 나오는 대부분의 컴파일러에선 4입니다. 즉 `signed int`와 `signed long int`는 표현하는 범위가 같습니다. `signed int`도 줄여서 `int`라고 쓸 수 있습니다. 특수한 경우에선, `int` 자체를 생략할 수 있는데, 이것도 나중에 다루도록 하겠습니다. `signed int`가 있는 것 처럼 `unsigned int`도 있습니다. `unsigned int`도 줄여서 `unsigned`라고 쓸 수 있습니다.
+`signed int` 자체도 자료형이 됩니다. `signed int`의 바이트 수는 컴파일러에 따라 다릅니다. 아두이노에선 2이지만, Visual Studio의 컴파일러를 포함한 요즘 나오는 대부분의 컴파일러에선 4입니다. 즉 `signed int`와 `signed long int`는 표현하는 범위가 같습니다. `signed int`도 줄여서 `int`라고 쓸 수 있습니다. 특수한 경우에선, `int` 자체를 생략할 수 있는데, 이것도 나중에 다루도록 하겠습니다. `signed int`가 있는 것처럼 `unsigned int`도 있습니다. `unsigned int`도 줄여서 `unsigned`라고 쓸 수 있습니다.
 
 ```c
 int main()
