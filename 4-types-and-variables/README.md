@@ -30,7 +30,8 @@ C에서 변수를 정의하는 방법은 다음과 같습니다.
 
 위에 있는 변수 사용 설명이 잘 안 와닿을 것이라고 생각합니다. 실제 사용 예시를 보도록 합시다.
 ```c
-int main() {
+int main()
+{
     char c;
     short s = 0;
     double d, dd = 0.2;
@@ -52,7 +53,8 @@ C의 정수 자료형은 다음과 같습니다.
 
 자료형의 `int`와 `signed`는 생략할 수 있습니다. 즉, `char`, `short int`, `long int`, `long long int`이라 적어도 되고, `short`, `long`, `long long`이라 적어도 됩니다.
 ```c
-int main() {
+int main()
+{
     signed char c = -5;
     short int s = 6;
     signed long l = -7;
@@ -71,7 +73,8 @@ int main() {
 
 이 경우엔 `unsigned`는 생략할 수 없지만, `int`는 생략할 수 있습니다.
 ```c
-int main() {
+int main()
+{
     unsigned char c = 5;
     unsigned short int s = 6;
     unsigned long l = 7;
@@ -82,7 +85,8 @@ int main() {
 `signed int` 자체도 자료형이 됩니다. `signed int`의 바이트 수는 컴파일러에 따라 다릅니다. 아두이노에선 2이지만, Visual Studio의 컴파일러를 포함한 요즘 나오는 대부분의 컴파일러에선 4입니다. 즉 `signed int`와 `signed long int`는 표현하는 범위가 같습니다. `signed int`도 줄여서 `int`라고 쓸 수 있습니다. 특수한 경우에선, `int` 자체를 생략할 수 있는데, 이것도 나중에 다루도록 하겠습니다. `signed int`가 있는 것 처럼 `unsigned int`도 있습니다. `unsigned int`도 줄여서 `unsigned`라고 쓸 수 있습니다.
 
 ```c
-int main() {
+int main()
+{
     int i = 5;
     unsigned u = 6;
     unsigned int uu = 7;
@@ -99,7 +103,8 @@ int main() {
 | `double` | 8 | ± 1.7 ÷ 10³⁰⁸ ~ ± 1.7 × 10³⁰⁸ |
 
 ```c
-int main() {
+int main()
+{
     float f = 0.5;
     double d = -1.1237;
 }
