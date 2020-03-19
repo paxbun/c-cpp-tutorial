@@ -21,8 +21,8 @@ C/C++ 문법을 더 쉽게 이해하기 위해 컴퓨터의 구조를 간단하�
 
 C의 자료형과 변수에 대해 알아보고, 변수를 출력하는 방법에 대해 배웁니다.
 
-5. [산술 및 논리 연산자](5-arithmetic-and-logic-operators)
+5. [기본 연산자](5-basic-operators)
 
-C의 산술 및 논리 연산자에 대해 배웁니다.
+C의 기본적인 연산자에 대해 배웁니다.
 
 ![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png "license")

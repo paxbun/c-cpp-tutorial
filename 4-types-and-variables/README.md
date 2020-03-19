@@ -217,4 +217,4 @@ int main()
 6, 7.000000, and 8
 ```
 
-[다음: 산술 및 논리 연산자](../5-arithmetic-and-logic-operators)
+[다음: 기본 연산자](../5-basic-operators)
