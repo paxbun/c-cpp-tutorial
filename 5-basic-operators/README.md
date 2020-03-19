@@ -183,7 +183,7 @@ int main()
 2
 ```
 
-대입 연산자 `=`도 연산자 우선순위가 있습니다. `=` 보다 낮은 순위를 가집니다. 아까 변수에 덧셈의 결과를 대입할 때, `c = a + b;` 처럼 썼습니다. 여기에 우선순위에 따라 괄호를 표시하면 어떻게 될까요? `c = (a + b);`가 되어 우리가 생각하는대로 작동하게 될 것임을 알 수 있습니다. `=`가 `+`보다 높은 순위를 가지게 된다면 `(c = a) + b`가 될텐데, 프로그램이 우리가 의도한대로 작동하지 않을 것 같습니다. 앞으로 다양한 연산자를 공부하게 될텐데요, C의 전체 연산자 우선순위는 [여기](https://en.cppreference.com/w/c/language/operator_precedence), C++은 [여기](https://en.cppreference.com/w/cpp/language/operator_precedence)를 참고해주세요.
+대입 연산자 `=`도 연산자 우선순위가 있는데요, 산술 연산자보다 낮은 순위를 가집니다. 아까 변수에 덧셈의 결과를 대입할 때, `c = a + b;` 처럼 썼습니다. 여기에 우선순위에 따라 괄호를 표시하면 어떻게 될까요? `c = (a + b);`가 되어 우리가 생각하는대로 작동하게 될 것임을 알 수 있습니다. `=`가 `+`보다 높은 순위를 가지게 된다면 `(c = a) + b`가 될텐데, 프로그램이 우리가 의도한대로 작동하지 않을 것 같습니다. 앞으로 다양한 연산자를 공부하게 될텐데요, C의 전체 연산자 우선순위는 [여기](https://en.cppreference.com/w/c/language/operator_precedence), C++은 [여기](https://en.cppreference.com/w/cpp/language/operator_precedence)를 참고해주세요.
 
 ## 연산자 결합방향(operator associativity)
 
