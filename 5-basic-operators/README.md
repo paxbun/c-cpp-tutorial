@@ -276,7 +276,8 @@ int main()
 
 int main()
 {
-    printf("%hd %u %lld", (short)0b10010, 024u, 0x234ll);
+    short s = 0b10010;
+    printf("%hd %u %lld", s, 024u, 0x234ll);
 }
 ```
 ```
