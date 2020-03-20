@@ -54,6 +54,7 @@
 * CLI 프로그램에서 실행 인자 불러오는 방법
 * 종료 코드
 * 주석
+* 명명 규약
 
 8. [정수 자료형과 부동소수점](8-integral-types-and-floating-points)
 
