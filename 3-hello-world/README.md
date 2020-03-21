@@ -93,4 +93,4 @@ int main()
 
 로 해석할 수 있습니다.
 
-[다음: 변수와 포인터](../4-types-and-variables)
+[다음: 자료형과 변수](../4-types-and-variables)
