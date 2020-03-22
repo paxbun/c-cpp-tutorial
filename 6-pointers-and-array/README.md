@@ -159,7 +159,7 @@ int main()
 
 !["Project Property Pages"](img/7.png "Project Property Pages")
 
-여기서 `Configuration`과 `Platform`을 모두 `All Configurations`과 `All Platforms`으로 바꾼 후, `Preprocessor Definitions`에 `_CRT_SECURE_NO_WARNINGS;`를 맨 앞에 넣어주세요. `_CRT_SECURE_NO_WARNINGS;` 까지 넣으신 것을 확신하셨으면 확인을 눌러주세요.
+여기서 `Configuration`과 `Platform`을 모두 `All Configurations`과 `All Platforms`으로 바꾼 후, `Preprocessor Definitions`에 `_CRT_SECURE_NO_WARNINGS;`를 맨 앞에 넣어주세요. `_CRT_SECURE_NO_WARNINGS;` 까지 넣으신 것을 확인하셨으면 확인을 눌러주세요.
 
 !["Add _CRT_SECURE_NO_WARNINGS"](img/8.png "Add _CRT_SECURE_NO_WARNINGS")
 
@@ -172,7 +172,8 @@ int main()
 int main()
 {
     int i;
-    scanf("%d", &i);
+    int *p = &i;
+    scanf("%d", p);
     printf("%d", i * 2);
 }
 ```
@@ -190,8 +191,18 @@ int main()
 !["Sample output"](img/11.png "Sample output")
 
 ```
->>>>>> 12
+: 12
 24
 ```
 
-> 앞으로 >>>>>>는 사용자의 입력 예시를 나타내는 표시로 사용하겠습니다.
+> 앞으로 :는 사용자의 입력 예시를 나타내는 표시로 사용하겠습니다.
+
+입력한 정수의 두 배가 되는 정수가 출력된 것을 확인할 수 있습니다. 이 예제에서 `i`가 메모리 공간 120\~123을, `p`가 124\~127을 차지하고 있다고 가정하고, 각 문장을 자세히 살펴보겠습니다.
+
+| 문장 | 설명 | 실행 후 메모리 상태 |
+| --- | --- | --- |
+| `int i;` | 120번을 `i`라고 이름 짓습니다. | !["Memory 1"](img/12.png "Memory 1") |
+| `int *p = &i;` | 124번을 `p`라고 이름 짓고 `i`라는 이름의 공간의 메모리 주소를 넣습니다. | !["Memory 2"](img/13.png "Memory 2") |
+| `scanf("%d", p);` | `p`라는 이름의 공간에 들어있는 메모리 주소를 가지는 공간에 사용자로부터 입력받은 정수를 넣습니다. (12 입력) | !["Memory 3"](img/14.png "Memory 3") |
+| `printf("%d", i * 2)` | `i`라는 이름의 공간에 들어있는 값에 2을 곱한 값을 출력합니다. (24 출력) | !["Memory 3"](img/14.png "Memory 3") |
+
