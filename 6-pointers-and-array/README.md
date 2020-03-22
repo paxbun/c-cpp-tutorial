@@ -148,3 +148,50 @@ int main()
 ```
 
 > 삼중 포인터부터는 잘 쓰이지 않습니다.
+
+## 변수 입력받기
+
+컴퓨터의 작동은 입력/계산/출력 세 가지로 분류할 수 있습니다. 지금까지 계산과 출력은 많이 했지만, 입력은 한 번도 한 적이 없는데요, 드디어 변수를 입력받는 방법을 다룰 수 있게 되었습니다. 출력을 `printf`라는 걸로 했던 것 처럼, 입력은 `scanf`라는 걸로 합니다. `scanf`를 사용하기 전, 필요한 사전작업이 있습니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 버튼으로 클릭한 후, `속성`을 눌러주세요.
+
+!["Select properties"](img/6.png "Select properties")
+
+그럼 다음과 같이 프로젝트의 속성 설정 창이 표시됩니다. 여기서 왼쪽의 메뉴에서 `C/C++` > `전처리기(Preprocessor)` 메뉴에 들어가주세요.
+
+!["Project Property Pages"](img/7.png "Project Property Pages")
+
+여기서 `Configuration`과 `Platform`을 모두 `All Configurations`과 `All Platforms`으로 바꾼 후, `Preprocessor Definitions`에 `_CRT_SECURE_NO_WARNINGS;`를 맨 앞에 넣어주세요. `_CRT_SECURE_NO_WARNINGS;` 까지 넣으신 것을 확신하셨으면 확인을 눌러주세요.
+
+!["Add _CRT_SECURE_NO_WARNINGS"](img/8.png "Add _CRT_SECURE_NO_WARNINGS")
+
+> Visual Studio의 컴파일러는 `scanf`에 보안 문제가 있어 `scanf` 사용을 원칙적으로 금지합니다. 하지만 저희는 C 문법을 배우고 있기 때문에, `scanf`를 사용하는 것은 큰 문제가 되지 않습니다. 이 작업은 그 금지 규칙을 해제하기 위한 것입니다.
+
+다음 코드를 실행해주세요.
+```c
+#include <stdio.h>
+
+int main()
+{
+    int i;
+    scanf("%d", &i);
+    printf("%d", i * 2);
+}
+```
+
+프로그램이 실행하면, 커서가 깜빡이면서 아무것도 뜨지 않습니다.
+
+!["Console waiting for user input"](img/9.png "Console waiting for user input")
+
+이 상태로 무언가 입력하면, 글씨가 뜹니다. 백스페이스도 작동하고요.
+
+!["Sample input"](img/10.png "Sample input")
+
+이 상태로 엔터를 눌러주세요.
+
+!["Sample output"](img/11.png "Sample output")
+
+```
+>>>>>> 12
+24
+```
+
+> 앞으로 >>>>>>는 사용자의 입력 예시를 나타내는 표시로 사용하겠습니다.
