@@ -345,7 +345,7 @@ int main()
 
 !["The length of an array can be omitted"](img/15.png "The length of an array can be omitted")
 
-바로 `int arr1[4]`과 `int arr[3]`가 표시되는 것을 알 수 있습니다. 이렇게 초기식 안에 들어있는 숫자의 개수에 맞추어 배열의 크기를 조정할 수 있다는 것을 알 수 있습니다.
+바로 `int arr1[4]`과 `double arr[3]`가 표시되는 것을 알 수 있습니다. 이렇게 초기식 안에 들어있는 숫자의 개수에 맞추어 배열의 크기를 조정할 수 있다는 것을 알 수 있습니다.
 
 ## 배열을 사용할 때 메모리 상태
 
