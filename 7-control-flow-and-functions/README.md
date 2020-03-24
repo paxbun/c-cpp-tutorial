@@ -186,7 +186,7 @@ int main()
 #include <stdio.h>
 
 int main() {
-    int i;
+    { int i; }
     {
         int j = 5;
         printf("%d", j);
@@ -202,11 +202,11 @@ int main() {
 }
 ```
 
-`int j = 5;`나 `printf("%d", j);`는 그 자체로 하나의 문장이지만, `{ int j = 5; printf("%d", j); }` 자체도 하나의 문장이 됩니다. 복합문 안에 문장이 들어있기 때문에, 복합문 안에 복합문을 집어넣는 것도 가능합니다. `{}`같이 빈 복합문도 있을 수 있고요. 배열의 초기화 식과 비슷하다는 것에 주의해주세요.
+`int j = 5;`나 `printf("%d", j);`는 그 자체로 하나의 문장이지만, `{ int j = 5; printf("%d", j); }` 자체도 하나의 문장이 됩니다. 복합문 안에 문장이 들어있기 때문에, 복합문 안에 복합문을 집어넣는 것도 가능합니다. `{}`같이 빈 복합문도 있을 수 있고, `{ int i; }`처럼 문장이 하나만 들어있는 복합문도 있을 수 있습니다. 배열의 초기화 식과 비슷하다는 것에 주의해주세요.
 
 ## 조건문(conditional statement)
 
-`조건문(conditional statement)`은 결과값이 논리값인 식이 주어졌을 때, 그 식의 결과에 따라 다른 문장을 수행하는 문장입니다. C에선 `if-else문(if-else statement)`이 유일한 조건문입니다. if-else문은 다음과 같이 씁니다.
+`조건문(conditional statement)`은 결과값이 논리값인 식이 주어졌을 때, 그 식의 결과에 따라 다른 문장을 수행하는 문장입니다. C에선 `if문(if statement)`이 유일한 조건문입니다. if문은 다음과 같이 씁니다.
 
 ```
 if (<조건식>) <조건식이 참일 때 실행할 문장> [else <조건식이 거짓일 때 실행할 문장>]
@@ -220,81 +220,53 @@ if (<조건식>) <조건식이 참일 때 실행할 문장> [else <조건식이 
 int main()
 {
     if (3 < 5)
-    {
-        printf("true: ");
         printf("3 is smaller than 5\n");
-    }
     else
-    {
-        printf("false: ");
         printf("3 is not smaller than 5\n");
-    }
 
     if (4 == 6)
-    {
-        printf("true: ");
         printf("4 is equal to 6\n");
-    }
     else
-    {
-        printf("false: ");
         printf("4 is not equal to 6\n");
-    }
 }
 ```
 ```
-true: 3 is smaller than 5
-false: 4 is not equal to 6
+3 is smaller than 5
+4 is not equal to 6
 
 ```
 
-`int main() { ... }` 처럼 `{}`안에 문장을 또 넣을 수 있는 새로운 문법이 등장했습니다. [5장](../5-basic-operators)에서 `int main`안에는 항상 **문장**이 들어가야 한다는 것을 배웠습니다. `if-else statement`라는 이름에서 알 수 있듯, `if-else문`은 여러 문장을 조합해서 하나의 문장(statement)을 만들 수 있는 방법 중 하나입니다. 
+`if (...)` 안에는 조건문이 들어가는데, 그 조건문의 결과가 결과가 참이면 `<조건식이 참일 때 실행할 문장>`이, 거짓이면 `<조건식이 거짓일 때 실행할 문장>`이 실행되는 것을 알 수 있습니다.
 
-if-else문의 구조는 `int main() { ... }`과 전체적으로 비슷한데, `if (...)` 안에 논리값으로 해석되는 식이 들어간다는 점이 다릅니다. 이 식의 결과가 참이면 `if () { ... }`안에 들어있는 문장이, 거짓이면 `else { ... }`안에 들어있는 문장이 실행되게 됩니다.
-
-`if`나 `else` 다음의 `{ ... }` 안에 들어있는 문장이 하나이면, `{}`를 생략할 수 있습니다.
+if문에는 복합문도 집어넣을 수 있습니다.
 
 ```c
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int i; scanf("%d", &i);
-    if (1 <= i && i <= 10)
+    if (1 <= i && i <= 10) {
+        printf("true: ");
         printf("i is between 1 and 10");
-    else
+    }
+    else {
+        printf("false: ");
         printf("i is not between 1 and 10");
+    }
 }
 ```
 ```
 : 5
-i is between 1 and 10
+true: i is between 1 and 10
 ```
 ```
 : 12
-i is not between 1 and 10
+false: i is not between 1 and 10
 ```
 
 > `1 <= i && i <= 10`이라고 적은 것에 주목해주세요. `1 <= i`의 결과는 논리값입니다. `i <= 10`도 마찬가지이고요. `i`가 1과 10 사이에 있으면 1, 아니면 0이 되는 식을 만들고 싶으면 `1 <= i && i <= 10`이라고 적어야 합니다. `1 <= i <= 10`은 `(1 <= i) <= 10`으로 해석되기 때문에, `i`가 1 미만이라고 해도 `0 <= 10`, `i`가 10을 초과해도 `1 <= 10`이 되어 항상 참인 식이 됩니다. **비교 연산자의 결과는 논리값**이라는 것을 항상 기억해주세요.
 
-> `int main() { ... }`의 `{}`는 생략 불가능합니다.
-
-if-else문에선 `{ ... }` 안의 문장이 하나도 없으면, `{}`를 생략할 수 없습니다. 다음 예제는 컴파일되지 않습니다.
-
-```c
-#include <stdio.h>
-
-int main()
-{
-    if (1)
-    else
-    {
-        printf("This is useless");
-    }
-}
-```
-
-`else { ... }` 안의 문장이 하나도 없으면 `else {}` 자체를 생략할 수 있습니다. 원래 if-else문의 이름은 if문이지만, 이런 성질 때문에 두 이름이 혼용됩니다.
+만약 조건식이 거짓일 때 아무것도 실행하고 싶지 않다면 `else` 자체를 생략할 수 있습니다.
 
 ```c
 #include <stdio.h>
@@ -346,7 +318,7 @@ i is between 0 and 10
 i is bigger than 10
 ```
 
-if-else문 자체는 하나의 문장이기 때문에, 위 문장은 다음과 같이도 쓸 수 있습니다.
+if-else문 자체는 하나의 문장이기 때문에, 위 문장은 다음과 같이 복합문 없이 쓸 수 있습니다.
 
 ```c
 #include <stdio.h>
