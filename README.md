@@ -46,36 +46,45 @@
 * 배열과 포인터 간 변환
 * 포인터 연산
 
-7. [제어 흐름과 함수](7-control-flow-and-functions)
+7. [제어 흐름](7-control-flow)
 
-* 조건문, 반복문
-* 비교 연산자, 논리 연산자, 삼항 연산자
-* `goto`와 레이블
-* 함수, 재귀함수
+* 불 대수
+* 논리 연산자, 비교 연산자, 조건 연산자
+* if문
+* while문
+* break문
+* do-while문
+* for문
+
+8. [함수](8-functions)
+
 * 레지스터
+* 스택과 스코프
+* `goto`와 레이블
+* switch문
+* 함수, 재귀함수
 * `static`, `inline`
-* 변수의 스코프
 * 파워셸 사용법
 * CLI 프로그램에서 실행 인자 불러오는 방법
 * 종료 코드
 * 주석
 * 명명 규약
 
-8. [정수 자료형과 부동소수점](8-integral-types-and-floating-points)
+9. [정수 자료형과 부동소수점](9-integral-types-and-floating-points)
 
 * 2의 보수
 * 비트 연산자
 * 엔디안
 * 부동소수점
 
-9. [문자와 문자열](9-characters-and-strings)
+10. [문자와 문자열](10-characters-and-strings)
 
 * 문자와 `char`
 * 문자열
 * 인코딩
 * `<string.h>`
 
-10. [빌드 과정](10-build-process)
+11. [빌드 과정](11-build-process)
 
 * 메크로
 * 전처리기와 헤더
@@ -83,7 +92,7 @@
 * 어셈블리어와 기계어
 * 심볼과 오브젝트 파일
 
-11. [복잡한 자료형과 동적 메모리](11-complex-types-and-dynamic-memory)
+12. [복잡한 자료형과 동적 메모리](12-complex-types-and-dynamic-memory)
 
 * 한정자
 * 구조체, 공용체
@@ -96,17 +105,17 @@
 * `<stdlib.h>`
 * `malloc`, `free`
 
-12. [입출력](12-input-and-output)
+13. [입출력](13-input-and-output)
 
 * 스트림
 * 파일
 
 ## C++ 목차
 
-13. 미정
+14. 미정
 * 미정
 
-14. [네임스페이스](13-namespaces)
+15. [네임스페이스](15-namespaces)
 
 * 네임스페이스
 * 네임 맹글링
