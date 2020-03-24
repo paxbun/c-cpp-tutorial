@@ -169,7 +169,13 @@ int main()
 
 ## 조건문(conditional statement)
 
-`조건문(conditional statement)`은 결과값이 논리값인 식이 주어졌을 때, 그 식의 결과에 따라 다른 문장을 수행하는 문장입니다. C에선 `if-else문(if-else statement)`이 유일한 조건문입니다. 다음 예제를 봐주세요.
+`조건문(conditional statement)`은 결과값이 논리값인 식이 주어졌을 때, 그 식의 결과에 따라 다른 문장을 수행하는 문장입니다. C에선 `if-else문(if-else statement)`이 유일한 조건문입니다. if-else문은 다음과 같이 씁니다.
+
+```
+if (<조건식>) <조건식이 참일 때 실행할 문장> [else <조건식이 거짓일 때 실행할 문장>]
+```
+
+다음 예제를 봐주세요.
 
 ```c
 #include <stdio.h>
