@@ -56,6 +56,8 @@
 * do-while문
 * for문
 
+[5-7장 과제](assignments/5-7.pdf)
+
 8. [함수](8-functions)
 
 * 레지스터
