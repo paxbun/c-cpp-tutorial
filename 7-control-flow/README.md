@@ -320,7 +320,7 @@ i is between 0 and 10
 i is bigger than 10
 ```
 
-if-else문 자체는 하나의 문장이기 때문에, 위 예제는 다음과 같이 복합문 없이 쓸 수 있습니다.
+if문 자체는 하나의 문장이기 때문에, 위 예제는 다음과 같이 복합문 없이 쓸 수 있습니다.
 
 ```c
 #include <stdio.h>
