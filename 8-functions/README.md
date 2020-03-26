@@ -65,7 +65,7 @@ int main()
 
 이렇게 해석될 수 있습니다.
 
-> 인텔과 AMD에서 생산하는 CPU는 x86 CPU라고 불리는데요, eax, ebx, ecx 등은 x86 CPU의 밤용 레지스터들입니다.
+> 인텔과 AMD에서 생산하는 CPU는 x86 CPU라고 불리는데요, eax, ebx, ecx 등은 x86 CPU의 범용 레지스터들입니다.
 
 ## 프로그램 카운터(program counter)
 
