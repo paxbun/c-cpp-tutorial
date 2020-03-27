@@ -234,7 +234,7 @@ int main()
 24
 ```
 
-`scanf`도 `print`처럼 여러 값을 받을 수 있고, `print`와 같은 형식 지정자를 사용합니다.
+`scanf`도 `printf`처럼 여러 값을 받을 수 있고, `printf`와 같은 형식 지정자를 사용합니다.
 
 ```c
 #include <stdio.h>
