@@ -982,7 +982,7 @@ int main()
 
 int main()
 {
-    printf("Summation calculator\n");
+    printf("Sum calculator\n");
     int sum = 0;
     while (1)
     {
@@ -996,7 +996,7 @@ int main()
 }
 ```
 ```
-Summation calculator
+Sum calculator
 Gimme a number: 7
 Gimme a number: 18
 Gimme a number: 25
