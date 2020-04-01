@@ -40,11 +40,11 @@ size_t cnt = std::count_if(v.begin(),
 >
 > struct CaseInsensitiveEqual
 >
-> {
+> \{
 >
 >     bool operator()(StringT const& lhs, StringT const& rhs) const
 >
->     {
+>     \{
 >
 >         using namespace std;
 >
@@ -56,15 +56,15 @@ size_t cnt = std::count_if(v.begin(),
 >
 >                         rhs.begin(),
 >
->                         \[\](auto l, auto r) {
+>                         \[\](auto l, auto r) \{
 >
 >                             return tolower(l) == tolower(r);
 >
->                         });
+>                         \});
 >
->     }
+>     \}
 >
-> };
+> \};
 >
 >
 >
@@ -72,12 +72,12 @@ size_t cnt = std::count_if(v.begin(),
 >
 >                            v.end(),
 >
->                            \[\](auto const& str) {
+>                            \[\](auto const& str) \{
 >
 >                                return CaseInsensitiveEqual\<
 >
 >                                    decltype(v)\:\:value_type\> {}(str, "hello");
 >
->                            });
+>                            \});
 
 너비가 같은 폰트를 사용하면 각 줄의 들여쓰기를 맞출 수 있는 것에 반해, 너비가 서로 다르면 들여쓰기의 간격을 조절하기 힘들다는 것을 알 수 있습니다.
