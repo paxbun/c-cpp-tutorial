@@ -57,6 +57,7 @@
 * for문
 
 [5-7장 과제](assignments/5-7.pdf)
+
 [5-7장 과제 2](assignments/5-7.2.pdf)
 
 8. [함수](8-functions)
